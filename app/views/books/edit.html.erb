@@ -8,10 +8,16 @@
           <li><%= message %></li>
         <% end %>
       </ul>
-<div class="row">
+<div class="container">
+ <div class="row">
   <div class="col-xs-offset-3 col-xs-6">
     <h1>Editing Book</h1>
-    <div class="menu">
+    <div class="menu">]
+     <thead>
+        <th></th>
+        <th>Title</th>
+        <th>Opinion</th>
+     </thead>
       <%= link_to "Show", book_path(@book) %>
       <%= link_to "Back", books_path %>
     </div>
@@ -23,10 +29,22 @@
   <div class="upload">
     <%= f.submit " Update Book" %>
   </div>
-<% end %>
-<div class="menu">
-  <%= link_to "Show", book_path(@book) %>
-  <%= link_to "Back", books_path %>
-    </div>
+  <% end %>
+  <div class="menu">
+   <%= link_to "Show", book_path(@book) %>
+   <%= link_to "Back", books_path %>
+  </div>
   <div class="col-xs-3"></div>
+  </div>
+ </div>
+
+ <footer>
+  <div class='container mt-5'>
+    <div class='row'>
+      <div class='mx-auto'>
+        <p>CopyRight Infratop.inc</p>
+      </div>
+    </div>
+  </div>
+ </footer>
 </div>
